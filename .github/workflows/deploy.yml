@@ -21,9 +21,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: |
-          npm run build
-          ls -la
+        run: npm run build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -35,4 +33,3 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET_NAME }} --acl public-read
-        working-directory: ./
