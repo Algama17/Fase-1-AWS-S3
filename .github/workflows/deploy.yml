@@ -35,3 +35,4 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET_NAME }} --acl public-read
+        working-directory: ./
