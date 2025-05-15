@@ -21,9 +21,9 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build
-      - name: List files after build
-        run: ls -la
+        run: |
+          npm run build
+          ls -la # Verifica que el directorio build/ exista
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
