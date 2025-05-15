@@ -45,7 +45,7 @@ const ImageUploader = () => {
 
   return (
     <div style={{ padding: '20px', border: '1px solid #ccc', maxWidth: '400px' }}>
-      <h2>Subiraaaaaa Imagen</h2>
+      <h2>Subir Imagen</h2>
       <input type="file" accept="image/*" onChange={handleFileChange} />
       {previewUrl && (
         <div style={{ marginTop: '10px' }}>
