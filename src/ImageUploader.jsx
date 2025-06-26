@@ -101,7 +101,7 @@ const ImageUploader = () => {
                   position: 'absolute', 
                   top: '5px', 
                   right: '5px', 
-                  backgroundColor: 'red', 
+                  backgroundColor: 'blue', 
                   color: 'white', 
                   border: 'none', 
                   borderRadius: '50%', 
